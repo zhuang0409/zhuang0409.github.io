@@ -22,6 +22,7 @@
       episodes: "Episodes",
       book: "Book",
       with: "with",
+      solo: "Independent project",
       footer: "Last updated",
       project: "project",
       links: {},
@@ -39,6 +40,7 @@
       episodes: "Folgen",
       book: "Buch",
       with: "mit",
+      solo: "Eigenständiges Projekt",
       footer: "Zuletzt aktualisiert",
       project: "Projekt",
       links: { slides: "Folien", video: "Video", manuscript: "Manuskript" },
@@ -56,6 +58,7 @@
       episodes: "节目列表",
       book: "书籍",
       with: "合作：",
+      solo: "独立完成",
       footer: "最后更新",
       project: "项目",
       links: { slides: "幻灯片", video: "视频", manuscript: "手稿" },
@@ -80,7 +83,7 @@
       <h1>${esc(t(P.name))}${t(P.name) !== P.name.en ? ` <span class="name-alt">${esc(P.name.en)}</span>` : ""}</h1>
       <p class="role">${esc(t(P.role))} · ${esc(t(P.location))}</p>
       ${P.tagline ? `<p class="tagline">${esc(t(P.tagline))}</p>` : ""}
-      ${P.intro.map((p) => `<p>${esc(t(p))}</p>`).join("")}
+      ${P.intro.map((p) => `<p>${esc(t(p)).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")}</p>`).join("")}
       <div class="links">${P.links.map((l) => `<a href="${esc(l.url)}"${/^https?:/.test(l.url) ? ' target="_blank" rel="noopener"' : ""}>${esc(t(l.label))}</a>`).join("")}</div>
     </div>
     <img class="portrait" src="${esc(P.photo)}" alt="Portrait of ${esc(P.name.en)}">`;
@@ -89,7 +92,7 @@
   PROJECTS.forEach((p) => (window.SITE.groups[p.id] = p.images || []));
   $(".projects").innerHTML = PROJECTS.map((p) => {
     const types = [...new Set(p.outputs.map((o) => o.type))].join(" ");
-    const meta = [t(p.period), t(p.where), p.with && `${ui.with} ${t(p.with)}`].filter(Boolean).map(esc).join(" · ");
+    const meta = [t(p.period), t(p.where), p.with && `${ui.with} ${t(p.with)}`, p.solo && ui.solo].filter(Boolean).map(esc).join(" · ");
     const details = [].concat(t(p.details) || []);
     return `
       <article class="project${p.featured ? " featured" : ""}" id="${esc(p.id)}" data-types="${esc(types)}">

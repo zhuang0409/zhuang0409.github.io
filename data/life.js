@@ -139,9 +139,9 @@ window.LIFE = {
       id: "reading",
       title: { en: "Reading", de: "Lesen", zh: "读书" },
       text: {
-        en: "I read fast, and I read in bursts. As a child I read an enormous amount in one concentrated stretch. Since then, reading comes in waves: a period of complete immersion, book after book, and then suddenly nothing for a while. The last wave came in the second year of my PhD. I am looking forward to the next one.",
-        de: "Ich lese schnell, und ich lese in Schüben. Als Kind habe ich in einer einzigen intensiven Phase unglaublich viel gelesen. Seitdem kommt das Lesen in Wellen: eine Zeit völligen Eintauchens, Buch um Buch, und dann plötzlich eine Weile gar nichts. Die letzte Welle kam im zweiten Jahr meiner Promotion. Ich freue mich auf die nächste.",
-        zh: "我读书很快，而且是爆发式地读。小时候我曾在一段时间里集中读了大量的书。从那以后，读书总是一阵一阵的：一段时间完全沉浸其中，一本接一本，然后突然很久不读。最近一次爆发是在博士第二年。我很期待下一次。",
+        en: "I read fast, and I read in bursts. As a child I read an enormous amount in one concentrated stretch. Since then, reading comes in waves: a period of complete immersion, book after book, and then suddenly nothing for a while. The last wave came in the second year of my PhD. Now I can feel the next one coming: lately I have started reading a lot of philosophy.",
+        de: "Ich lese schnell, und ich lese in Schüben. Als Kind habe ich in einer einzigen intensiven Phase unglaublich viel gelesen. Seitdem kommt das Lesen in Wellen: eine Zeit völligen Eintauchens, Buch um Buch, und dann plötzlich eine Weile gar nichts. Die letzte Welle kam im zweiten Jahr meiner Promotion. Jetzt spüre ich, dass die nächste kommt: In letzter Zeit lese ich viel Philosophie.",
+        zh: "我读书很快，而且是爆发式地读。小时候我曾在一段时间里集中读了大量的书。从那以后，读书总是一阵一阵的：一段时间完全沉浸其中，一本接一本，然后突然很久不读。最近一次爆发是在博士第二年。最近我预感下一次爆发要来了：开始读很多哲学书。",
       },
       booksLabel: { en: "Books that stayed with me", de: "Bücher, die mich begleitet haben", zh: "影响我的书" },
       books: [

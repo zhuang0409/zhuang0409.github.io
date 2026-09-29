@@ -16,21 +16,27 @@ window.PROFILE = {
   location: { en: "Giessen, Germany", de: "Gießen, Deutschland", zh: "德国吉森" },
   photo: "images/portrait.jpg",
 
+  // Intro paragraphs; **text** is shown in bold.
   intro: [
     {
-      en: "I am a computational cognitive neuroscientist and data scientist. Over eleven years my research has moved from psychology, where I became curious about people, to cognitive neuroscience, where I wanted to understand the mechanisms in the brain, to large-scale computational work with big data and AI. Each step asked a harder version of the same question.",
-      de: "Ich bin Computational Cognitive Neuroscientist und Data Scientist. In elf Jahren führte mich meine Forschung von der Psychologie, wo mich Menschen neugierig gemacht haben, über die kognitive Neurowissenschaft, wo ich die Mechanismen im Gehirn verstehen wollte, bis zu groß angelegter computergestützter Forschung mit Big Data und KI. Mit jedem Schritt wurde dieselbe Frage etwas schwieriger.",
-      zh: "我是一名计算认知神经科学家和数据科学家。十一年来，我的研究从心理学走到认知神经科学，再到今天基于大数据和 AI 的大规模计算认知神经科学：从对人的好奇，到想弄懂大脑里的机制，再到借助海量数据和模型去检验它。每往前一步，都是把同一个问题问得更难一点。",
+      en: "I am a computational cognitive neuroscientist and data scientist. Over eleven years my research has moved from psychology to cognitive neuroscience, and on to today's large-scale computational cognitive neuroscience built on big data and AI: from curiosity about people, to wanting to understand the mechanisms in the brain, to testing them with massive datasets and models. Each step asked the same question in a harder way: **how do humans understand the world?**",
+      de: "Ich bin Computational Cognitive Neuroscientist und Data Scientist. In elf Jahren führte mich meine Forschung von der Psychologie über die kognitive Neurowissenschaft bis zur heutigen groß angelegten Computational Cognitive Neuroscience mit Big Data und KI: von der Neugier auf Menschen über den Wunsch, die Mechanismen im Gehirn zu verstehen, bis dahin, sie mit riesigen Datenmengen und Modellen zu prüfen. Mit jedem Schritt habe ich dieselbe Frage schwieriger gestellt: **Wie verstehen Menschen die Welt?**",
+      zh: "我是一名计算认知神经科学家和数据科学家。十一年来，我的研究从心理学走到认知神经科学，再到今天基于大数据和 AI 的大规模计算认知神经科学：从对人的好奇，到想弄懂大脑里的机制，再到借助海量数据和模型去检验它。每往前一步，都是把同一个问题问得更难一点：**人是如何理解世界的？**",
     },
     {
-      en: "My work brings together large behavioural datasets (over a million human judgements), EEG and fMRI with deep learning models. One question runs through all of it: what has a model actually learned, and how close is that to the human mind?",
-      de: "In meiner Arbeit verbinde ich große Verhaltensdatensätze (über eine Million menschlicher Urteile), EEG und fMRT mit Deep-Learning-Modellen. Eine Frage zieht sich durch alles: Was hat ein Modell tatsächlich gelernt, und wie nah ist das am menschlichen Denken?",
-      zh: "我的工作把大规模行为数据（超过一百万条人类判断）、EEG 和 fMRI 与深度学习模型结合在一起。贯穿其中的始终是一个问题：模型究竟学到了什么？它与人类心智又有多接近？",
+      en: "My work combines large-scale behavioural data, including over a million human judgements, with EEG, fMRI and deep learning models to study how humans form and organise their representations of the world. At the same time, I care about another question that matters more and more: **what have AI models actually learned? How close are their internal representations to the human mind, and where do they differ?**",
+      de: "In meiner Arbeit verbinde ich große Verhaltensdatensätze, darunter über eine Million menschlicher Urteile, mit EEG, fMRT und Deep-Learning-Modellen. So untersuche ich, wie Menschen ihre Repräsentationen der Welt bilden und ordnen. Gleichzeitig beschäftigt mich eine weitere Frage, die immer wichtiger wird: **Was haben KI-Modelle tatsächlich gelernt? Wie nah sind ihre inneren Repräsentationen am menschlichen Denken, und wo unterscheiden sie sich?**",
+      zh: "我的工作结合大规模行为数据，包括超过一百万条人类判断，以及 EEG、fMRI 和深度学习模型，去研究人类如何形成和组织对世界的表征。与此同时，我也关心另一个越来越重要的问题：**AI 模型究竟学到了什么？它们形成的内部表征，与人类心智有多接近，又在哪里不同？**",
     },
     {
-      en: "I did my PhD at the University of Regensburg and my postdoc at the Max Planck Institute for Human Cognitive and Brain Sciences and the University of Giessen. I like to own a problem end to end, from experimental design and data collection to modelling and a result other people can use.",
-      de: "Promoviert habe ich an der Universität Regensburg, als Postdoc habe ich am Max-Planck-Institut für Kognitions- und Neurowissenschaften und an der Universität Gießen geforscht. Ich übernehme ein Problem gern von Anfang bis Ende: vom Versuchsdesign und der Datenerhebung über die Modellierung bis zu einem Ergebnis, mit dem andere weiterarbeiten können.",
-      zh: "我在雷根斯堡大学获得博士学位，之后在马克斯·普朗克人类认知与脑科学研究所和吉森大学做博士后。我喜欢把一个问题从头到尾做完：从实验设计、数据采集到建模，最后得到别人可以直接使用的结果。",
+      en: "I did my PhD at the University of Regensburg, followed by postdoctoral research at the Max Planck Institute for Human Cognitive and Brain Sciences and the University of Giessen. I like to take a problem from start to finish: from asking the question, designing the experiment and collecting the data, to modelling and analysis, and finally to a result that others can understand, test and use directly.",
+      de: "Promoviert habe ich an der Universität Regensburg, danach habe ich als Postdoc am Max-Planck-Institut für Kognitions- und Neurowissenschaften und an der Universität Gießen geforscht. Ich bearbeite ein Problem gern von Anfang bis Ende: von der Fragestellung, dem Versuchsdesign und der Datenerhebung über Modellierung und Analyse bis zu einem Ergebnis, das andere verstehen, prüfen und direkt nutzen können.",
+      zh: "我在雷根斯堡大学获得博士学位，之后在马克斯·普朗克人类认知与脑科学研究所和吉森大学从事博士后研究。我喜欢把一个问题从头到尾做完，从提出问题、实验设计和数据采集，到建模、分析，再到最终得到别人可以理解、检验和直接使用的结果。",
+    },
+    {
+      en: "For me, all of this points in one direction: understanding how people come to know the world, and whether machines are coming to know it in a different way.",
+      de: "Für mich zeigt all das in dieselbe Richtung: zu verstehen, wie Menschen die Welt erkennen, und ob Maschinen sie auf eine andere Weise erkennen.",
+      zh: "对我来说，这些工作最终都指向同一个方向：理解人如何认识世界，也理解机器是否正在以另一种方式认识它。",
     },
   ],
 

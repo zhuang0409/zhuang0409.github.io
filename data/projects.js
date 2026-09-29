@@ -163,7 +163,7 @@ window.PROJECTS = [
     title: { en: "When models hesitate, humans also struggle", de: "Wenn Modelle zögern, tun sich auch Menschen schwer", zh: "模型犹豫时，人也会吃力" },
     period: "2025", // TODO: confirm
     where: { en: "Max Planck Institute CBS & Justus Liebig University Giessen", de: "Max-Planck-Institut für Kognitions- und Neurowissenschaften & Justus-Liebig-Universität Gießen", zh: "马克斯·普朗克人类认知与脑科学研究所 & 吉森大学" },
-    with: "Martin N. Hebart",
+    solo: true, // independent project, no collaborators
     summary:
       {
         en: "Why are deep networks uncertain about some images? Across all 26,107 THINGS images, prediction entropy is driven more by semantic ambiguity than by low-level visual features. Images that make models hesitate also demand more processing in the human brain, seen in EEG from ~130 ms and in higher-level cortex with fMRI.",
