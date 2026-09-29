@@ -18,6 +18,9 @@ window.SITE = (function () {
   const LANG = pick();
   document.documentElement.dataset.lang = LANG;
   document.documentElement.lang = { en: "en", de: "de", zh: "zh-CN" }[LANG];
+  // Each language version is its own page for search engines: point canonical at ?lang=xx.
+  const canon = document.querySelector('link[rel="canonical"]');
+  if (canon && LANG !== "en") canon.href = `${canon.href.split("?")[0]}?lang=${LANG}`;
   if (LANG === "zh") {
     const l = document.createElement("link");
     l.rel = "stylesheet";
