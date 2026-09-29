@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Life · Tonghe Zhuang</title>
+  <meta name="description" content="Tonghe Zhuang outside work: dance, climbing, archery, skating, painting, garden and writing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-life">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Tonghe Zhuang</a>
+      <div class="page-switch" role="navigation" aria-label="Pages">
+        <a href="index.html" data-i18n="work">Work</a>
+        <a href="life.html" aria-current="page" data-i18n="life">Life</a>
+      </div>
+      <nav class="nav" aria-label="On this page">
+        <a href="#lately" data-i18n="lately">Lately</a>
+        <a href="#hobbies" data-i18n="hobbies">Hobbies</a>
+        <a href="#writing" data-i18n="writing">Writing</a>
+      </nav>
+      <div class="lang-switch-top" role="group" aria-label="Language"></div>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="life-hero">
+      <h1 data-i18n="life">Life</h1>
+      <p class="lead life-intro"></p>
+    </section>
+
+    <section id="lately" class="section">
+      <h2 class="lately-title"></h2>
+      <div class="lately"></div>
+    </section>
+
+    <section id="hobbies" class="section">
+      <h2 data-i18n="hobbies">Hobbies</h2>
+      <div class="life-groups"></div>
+    </section>
+
+    <section id="writing" class="section">
+      <h2 data-i18n="writing">Writing</h2>
+      <div class="writing"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer"><div class="wrap">© Tonghe Zhuang</div></footer>
+
+  <dialog class="lightbox" aria-label="Image viewer">
+    <button class="lb-close" type="button" aria-label="Close">×</button>
+    <button class="lb-prev" type="button" aria-label="Previous image">‹</button>
+    <figure>
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="lb-next" type="button" aria-label="Next image">›</button>
+  </dialog>
+
+  <!-- Content lives in data/life.js and data/writing.js. -->
+  <script src="shared.js"></script>
+  <script src="data/life.js"></script>
+  <script src="data/writing.js"></script>
+  <script src="life.js"></script>
+</body>
+</html>

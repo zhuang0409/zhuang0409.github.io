@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing · Tonghe Zhuang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Tonghe Zhuang</a>
+      <div class="page-switch" role="navigation" aria-label="Pages">
+        <a href="index.html" data-i18n="work">Work</a>
+        <a href="life.html" aria-current="page" data-i18n="life">Life</a>
+      </div>
+      <nav class="nav" aria-label="Life page">
+        <a href="life.html#hobbies" data-i18n="hobbies">Hobbies</a>
+        <a href="life.html#writing" data-i18n="writing">Writing</a>
+      </nav>
+      <div class="lang-switch-top" role="group" aria-label="Language"></div>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main class="wrap article-wrap">
+    <a class="back" href="life.html#writing" data-i18n="allWriting">← All writing</a>
+    <article class="article">
+      <div class="article-meta"></div>
+      <h1 class="article-title"></h1>
+      <p class="article-subtitle"></p>
+      <div class="lang-switch" role="group" aria-label="Language"></div>
+      <div class="article-body"></div>
+      <nav class="article-nav"></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer"><div class="wrap">© Tonghe Zhuang</div></footer>
+
+  <script src="shared.js"></script>
+  <script src="data/writing.js"></script>
+  <script src="post.js"></script>
+</body>
+</html>
