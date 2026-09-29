@@ -3,7 +3,7 @@
  * You normally never need to edit this file; edit the data files instead.
  */
 (function () {
-  const { t, esc, groups } = window.SITE;
+  const { t, esc, paras, groups } = window.SITE;
   const ui = {
     openingOnly: t({ en: "opening only", de: "nur der Anfang", zh: "仅开头" }),
     enlarge: t({ en: "Enlarge", de: "Vergrößern", zh: "放大" }),
@@ -40,7 +40,7 @@
           ${it.image ? `<button type="button" class="lately-img" data-lb="lately-${i}" data-i="0" aria-label="${esc(ui.enlarge)}: ${esc(t(it.image.caption))}"><img src="${esc(it.image.src)}" alt="${esc(t(it.image.caption))}"></button>` : ""}
           <div class="card-body">
             <h3>${esc(t(it.name))}</h3>
-            <p>${esc(t(it.text))}</p>
+            ${paras(t(it.text))}
           </div>
         </article>`;
       })
@@ -52,7 +52,7 @@
       <article class="card life-group" id="${esc(g.id)}">
         <div class="card-body">
           <h3>${esc(t(g.title))}</h3>
-          <p>${esc(t(g.text))}</p>
+          ${paras(t(g.text))}
           ${g.items?.length ? `<div class="practices">${g.items.map(chip).join("")}</div>` : ""}
           ${g.books?.length ? `<div class="books"><h4>${esc(t(g.booksLabel))}</h4><ul>${g.books.map((b) => `<li><span class="book-title">${esc(t(b.title))}</span> <span class="book-author">${esc(t(b.author))}${b.note ? `, ${esc(t(b.note))}` : ""}</span></li>`).join("")}</ul></div>` : ""}
           ${g.images?.length ? photos(g.id, g.images, g.columns) : ""}

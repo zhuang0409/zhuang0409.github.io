@@ -17,33 +17,17 @@ window.BEYOND = {
     role: { en: "Science advisor (2024)", de: "Wissenschaftliche Beratung (2024)", zh: "科学顾问（2024）" },
     cover: "images/podcast-cover.jpg",
     summary: {
-      en: "A Chinese-language podcast about the people and stories behind top papers in psychology and neuroscience. As science advisor I studied each guest's work before the interview and guided listeners through the papers in plain language.",
-      de: "Ein chinesischsprachiger Podcast über die Menschen und Geschichten hinter Spitzenpublikationen aus Psychologie und Neurowissenschaft. In der wissenschaftlichen Beratung habe ich mich vor jedem Interview in die Arbeit der Gäste eingelesen und die Hörerinnen und Hörer in verständlicher Sprache durch die Studien geführt.",
-      zh: "一档讲述心理学和神经科学顶刊论文背后的人与故事的中文播客。作为科学顾问，我在每次访谈前研读嘉宾的研究，并用通俗的语言带听众读懂这些论文。",
+      en: "As science advisor, I hosted a Chinese-language podcast about the people and stories behind top papers in psychology and neuroscience. The show interviews scientists from around the world. Before each interview I read the guest's research in depth and lay out the core questions, methods and debates in their papers, so the conversation goes beyond the abstract.\n\nI read papers fast: I can usually grasp the main logic of a paper in my field in 5 to 10 minutes. For the podcast I care about something else: how to turn complex research into questions a general audience can follow, so the scientific discussion stays accurate without losing the human story.\n\nBesides the interviews, I also organise and host public reading sessions. I break down the papers in advance and design a reading path and discussion questions, so listeners without a specialist background can enter a paper step by step, and a large group stays focused, engaged and lively through a long reading session.",
+      de: "In der wissenschaftlichen Beratung habe ich einen chinesischsprachigen Podcast moderiert, der von den Menschen und Geschichten hinter Spitzenpublikationen aus Psychologie und Neurowissenschaft erzählt. Die Sendung interviewt Forschende aus der ganzen Welt. Vor jedem Interview lese ich mich gründlich in die Forschung der Gäste ein und arbeite die zentralen Fragen, Methoden und Kontroversen ihrer Studien heraus, damit das Gespräch über das Abstract hinausgeht.\n\nIch lese Paper schnell: Die Hauptlogik eines Papers aus meinem Fachgebiet verstehe ich meist in 5 bis 10 Minuten. Beim Podcast geht es mir um etwas anderes: Wie übersetzt man komplexe Forschung in Fragen, denen ein breites Publikum folgen kann? So bleibt die wissenschaftliche Diskussion genau, und die menschliche Geschichte geht nicht verloren.\n\nNeben den Interviews organisiere und moderiere ich auch öffentliche Lesesessions. Ich bereite die Paper vorher auf und plane einen Leseweg und Diskussionsfragen. So können auch Hörerinnen und Hörer ohne Fachhintergrund Schritt für Schritt in eine Studie einsteigen, und eine große Gruppe bleibt über eine lange Lesezeit konzentriert, beteiligt und lebendig.",
+      zh: "作为科学顾问，我曾主持一档中文播客，讲述心理学和神经科学顶刊论文背后的人与故事。节目采访来自世界各地的科学家。每次访谈前，我都会深入阅读嘉宾的研究，梳理论文中的核心问题、方法和争议，让对话不只停留在摘要层面。\n\n我读论文很快。本领域的一篇论文，我通常可以在 5 到 10 分钟内抓住主要逻辑；做播客时，我更关心另一件事：怎样把复杂的研究转化成普通听众也能跟上的问题，让科学讨论既准确，又不失去人的故事。\n\n除了访谈，我也组织和主持公开共读。我会提前拆解论文、设计阅读路径和讨论问题，让没有专业背景的听众也能一步步进入论文，同时让一大群人在长时间阅读中保持专注、参与感和讨论的热度。",
     },
-    points: [
-      {
-        en: "Fast, deep reading: I can read a paper in my field in 5 to 10 minutes, and for the podcast I turned papers into questions a general audience could follow.",
-        de: "Schnelles, gründliches Lesen: Ein Paper aus meinem Fachgebiet lese ich in 5 bis 10 Minuten, und für den Podcast habe ich Studien in Fragen übersetzt, denen ein breites Publikum folgen konnte.",
-        zh: "快速而深入的阅读：本领域的一篇论文我 5 到 10 分钟就能读完。做播客时，我把论文转化成普通听众也能跟上的问题。",
-      },
-      {
-        en: "Guest preparation: I researched each guest's work before the interview so the conversation went beyond the abstract.",
-        de: "Vorbereitung der Gäste: Vor jedem Interview habe ich mich in die Forschung der Gäste eingearbeitet, damit das Gespräch über das Abstract hinausging.",
-        zh: "访前准备：每次访谈前我都会深入了解嘉宾的研究，让对话不止停留在摘要层面。",
-      },
-      {
-        en: "Large public reading sessions: I organised and moderated group readings, keeping a big room focused and lively.",
-        de: "Große öffentliche Lesesessions: Ich habe gemeinsame Lektürerunden organisiert und moderiert und dabei eine große Gruppe konzentriert und lebendig gehalten.",
-        zh: "大型公开共读：我组织并主持集体阅读活动，能让一大群人既保持专注又气氛活跃。",
-      },
-    ],
+    // Paragraphs are separated by a blank line (\n\n). The old bullet points were folded into the summary.
     journals: ["Nature Human Behaviour", "Nature Neuroscience", "PNAS", "The Lancet"],
     teamMembers: [
-      { name: "yq", about: { en: "engineer in the Netherlands", de: "Ingenieur:in in den Niederlanden", zh: "荷兰的工程师" } },
-      { name: "白博士", about: { en: "autism researcher in the UK", de: "Autismusforscher:in in Großbritannien", zh: "英国的自闭症研究者" } },
-      { name: "马儿", about: { en: "university psychology lecturer", de: "Psychologiedozent:in an einer Hochschule", zh: "高校心理学老师" } },
-      { name: "Tonghe", about: { en: "science advisor in Germany", de: "wissenschaftliche Beratung, Deutschland", zh: "德国的科学顾问" } },
+      { name: "yq", about: { en: "engineer in the Netherlands", de: "Ingenieur:in in den Niederlanden", zh: "在荷兰的工程师" } },
+      { name: "白博士", about: { en: "autism researcher in the UK", de: "Autismusforscher:in in Großbritannien", zh: "在英国的自闭症研究者" } },
+      { name: "马儿", about: { en: "psychology lecturer at a university", de: "Psychologiedozent:in an einer Hochschule", zh: "在高校的心理学老师" } },
+      { name: "Tonghe", about: { en: "science advisor in Germany", de: "wissenschaftliche Beratung, Deutschland", zh: "在德国的科学顾问" } },
     ],
     teamNote: {
       en: "A lively, curious team spread around the world. Apart from me, the team members are also the creators of 锵锵脑科学.",

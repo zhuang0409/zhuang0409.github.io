@@ -50,6 +50,9 @@ window.SITE = (function () {
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
+  // Text with blank lines ("\n\n") becomes several <p> paragraphs.
+  const paras = (s) => String(s ?? "").split(/\n\n+/).map((p) => `<p>${esc(p)}</p>`).join("");
+
   /* ---------- Lightbox ----------
    * Any <button data-lb="group" data-i="n"> opens image n of SITE.groups[group].
    */
@@ -128,5 +131,5 @@ window.SITE = (function () {
     initTheme();
   }
 
-  return { LANG, LANGS, t, esc, groups, init };
+  return { LANG, LANGS, t, esc, paras, groups, init };
 })();

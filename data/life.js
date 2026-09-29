@@ -11,9 +11,9 @@
 
 window.LIFE = {
   intro: {
-    en: "Outside work I dance, climb, run, skate, shoot arrows, read, visit museums, make things and look after my garden. These are simply things I love. Some of them also helped me grow, and I wrote about them.",
-    de: "Neben der Arbeit tanze ich, klettere, laufe, fahre Inliner, schieße mit Pfeil und Bogen, lese, gehe in Museen, bastle und kümmere mich um meinen Garten. Das sind einfach Dinge, die ich liebe. Manche davon haben mir auch geholfen zu wachsen, und darüber habe ich geschrieben.",
-    zh: "工作之外，我跳舞、攀岩、跑步、轮滑、射箭、读书、逛博物馆、做手工，也照料我的花园。这些只是我单纯喜欢的事。其中有一些也让我成长了，我把它们写了下来。",
+    en: "Outside work I dance, climb, run, skate and do archery, and I also love reading, visiting museums, making things by hand and looking after my garden. Some of these interests have been with me for many years; others simply make me happy. Many hobbies that seem small have quietly shaped me and become part of how I grew. So I wrote some of these moments down.",
+    de: "Neben der Arbeit tanze ich, klettere, laufe, fahre Inliner und schieße mit Pfeil und Bogen. Ich lese auch gern, gehe in Museen, bastle und kümmere mich um meinen Garten. Manche dieser Interessen begleiten mich seit vielen Jahren, andere machen mich einfach glücklich. Viele scheinbar kleine Hobbys haben mich unbemerkt geprägt und sind Teil meiner Entwicklung geworden. Deshalb habe ich einige dieser Momente aufgeschrieben.",
+    zh: "工作之余，我跳舞、攀岩、跑步、轮滑、射箭，也喜欢读书、逛博物馆、做手工和照料花园。有些兴趣陪了我很多年，有些只是单纯让我觉得快乐。很多看似微小的爱好，也在不知不觉中塑造了我，成为我成长的一部分。于是，我把这些片段也写了下来。",
   },
 
   lately: {
@@ -41,11 +41,11 @@ window.LIFE = {
       {
         name: { en: "German", de: "Deutsch", zh: "德语" },
         text: {
-          en: "Learning German. Still learning German.",
-          de: "Ich lerne Deutsch. Immer noch Deutsch.",
-          zh: "学德语。还在学德语。",
+          en: "More than a language: my way into German culture. A long-term project.",
+          de: "Mehr als eine Sprache: mein Weg in die deutsche Kultur. Ein langes Projekt.",
+          zh: "不只是一门语言，也是我走近德国文化的方式。想长期认真做下去。",
         },
-        image: { src: "images/life/german.jpg", caption: "Ich lerne immer noch Deutsch" },
+        image: { src: "images/life/german.jpg", caption: "Deutsch ist für mich mehr als eine Sprache." },
       },
     ],
   },
@@ -139,9 +139,9 @@ window.LIFE = {
       id: "reading",
       title: { en: "Reading", de: "Lesen", zh: "读书" },
       text: {
-        en: "I read fast, and I read in bursts. As a child I read an enormous amount in one concentrated stretch. Since then, reading comes in waves: a period of complete immersion, book after book, and then suddenly nothing for a while. The last wave came in the second year of my PhD. Now I can feel the next one coming: lately I have started reading a lot of philosophy.",
-        de: "Ich lese schnell, und ich lese in Schüben. Als Kind habe ich in einer einzigen intensiven Phase unglaublich viel gelesen. Seitdem kommt das Lesen in Wellen: eine Zeit völligen Eintauchens, Buch um Buch, und dann plötzlich eine Weile gar nichts. Die letzte Welle kam im zweiten Jahr meiner Promotion. Jetzt spüre ich, dass die nächste kommt: In letzter Zeit lese ich viel Philosophie.",
-        zh: "我读书很快，而且是爆发式地读。小时候我曾在一段时间里集中读了大量的书。从那以后，读书总是一阵一阵的：一段时间完全沉浸其中，一本接一本，然后突然很久不读。最近一次爆发是在博士第二年。最近我预感下一次爆发要来了：开始读很多哲学书。",
+        en: "I read fast, and often in bursts. As a child I once read a huge number of books in one concentrated stretch. Since then, reading has always come in waves for me: sometimes I am completely absorbed, reading one book after another; sometimes I don't touch a book for a long time. The last of these reading peaks came in the second year of my PhD.\n\nI have always felt that reading largely helps me make sense of things. In the past I learned about human nature, relationships and the complex ways people interact mostly from books. Now I increasingly like to bring that understanding back into real relationships: reflecting after I have lived through something, and continuing to get to know people, and myself, through those relationships.\n\nLately I have a feeling that the next reading peak is coming. AI has made me think again about many more basic questions, so I have started reading more philosophy. Questions about intelligence, consciousness, what a human being is, and how we actually understand the world have brought me back to books.",
+        de: "Ich lese schnell, und oft in Schüben. Als Kind habe ich in einer intensiven Phase sehr viele Bücher gelesen. Seitdem kommt das Lesen bei mir in Wellen: Manchmal tauche ich ganz ein und lese ein Buch nach dem anderen, manchmal rühre ich lange kein Buch an. Die letzte dieser Lesephasen war im zweiten Jahr meiner Promotion.\n\nIch hatte immer das Gefühl, dass Lesen mir vor allem hilft, Dinge zu verstehen. Früher habe ich aus Büchern viel über die menschliche Natur, über Beziehungen und über das komplizierte Miteinander von Menschen gelernt. Heute nehme ich dieses Verständnis immer lieber mit in echte Begegnungen: Ich denke über das Erlebte nach und lerne in Beziehungen weiter Menschen kennen, und auch mich selbst.\n\nIn letzter Zeit spüre ich, dass die nächste Lesephase kommt. Durch KI denke ich wieder über viele grundlegende Fragen nach, deshalb lese ich jetzt mehr Philosophie. Fragen über Intelligenz, Bewusstsein, darüber, was ein Mensch ist und wie wir die Welt eigentlich verstehen, haben mich zurück zu den Büchern gebracht.",
+        zh: "我读书很快，而且常常是爆发式地读。小时候，我曾在一段时间里集中读过大量的书。从那以后，阅读对我来说一直是一阵一阵的：有时会完全沉浸进去，一本接一本地读；有时又会很久不碰书。最近一次这样的阅读高峰，是在博士第二年。\n\n我一直觉得，读书很大程度上是在帮我解惑。以前，我更多从书里理解人性、关系和人与人之间复杂的互动；现在，我越来越喜欢把这些理解带回真实的人际交往中，在经历之后反思，在关系里继续认识人，也认识自己。\n\n最近，我隐约觉得下一次阅读高峰又要来了。AI 的出现让我重新开始思考很多更基础的问题，所以我开始读更多哲学。关于智能、意识、人是什么，以及我们究竟如何理解世界，这些问题又把我带回了书里。",
       },
       booksLabel: { en: "Books that stayed with me", de: "Bücher, die mich begleitet haben", zh: "影响我的书" },
       books: [

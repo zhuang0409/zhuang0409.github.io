@@ -5,7 +5,7 @@
 (function () {
   const P = window.PROFILE;
   const PROJECTS = window.PROJECTS;
-  const { LANG, t, esc } = window.SITE;
+  const { LANG, t, esc, paras } = window.SITE;
 
   // Interface text per language.
   const UI = {
@@ -176,8 +176,8 @@
           <div class="flag">${esc(ui.scicomm)}</div>
           <h3>${esc(t(pc.title))} <span class="zh">${esc(pc.zhTitle)}</span></h3>
           <div class="meta">${esc(t(pc.role))} · ${esc(pc.team)}</div>
-          <p>${esc(t(pc.summary))}</p>
-          <ul class="points">${pc.points.map((x) => `<li>${esc(t(x))}</li>`).join("")}</ul>
+          ${paras(t(pc.summary))}
+          ${pc.points?.length ? `<ul class="points">${pc.points.map((x) => `<li>${esc(t(x))}</li>`).join("")}</ul>` : ""}
           ${pc.stats?.length ? statRow(pc.stats) : ""}
           <p class="small">${esc(ui.guests)}: ${pc.journals.map((j) => `<em>${esc(j)}</em>`).join(", ")}</p>
           <p class="small"><strong>${esc(ui.team)}:</strong> ${pc.teamMembers.map((m) => `${esc(m.name)}, ${esc(t(m.about))}`).join(" · ")}. ${esc(t(pc.teamNote))}</p>
