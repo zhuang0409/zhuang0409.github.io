@@ -29,9 +29,9 @@ window.PROFILE = {
       zh: "我的工作结合大规模行为数据，包括超过一百万条人类判断，以及 EEG、fMRI 和深度学习模型，去研究人类如何形成和组织对世界的表征。与此同时，我也关心另一个越来越重要的问题：**AI 模型究竟学到了什么？它们形成的内部表征，与人类心智有多接近，又在哪里不同？**",
     },
     {
-      en: "I did my PhD at the University of Regensburg, followed by postdoctoral research at the Max Planck Institute for Human Cognitive and Brain Sciences and the University of Giessen. I like to take a problem from start to finish: from asking the question, designing the experiment and collecting the data, to modelling and analysis, and finally to a result that others can understand, test and use directly.",
-      de: "Promoviert habe ich an der Universität Regensburg, danach habe ich als Postdoc am Max-Planck-Institut für Kognitions- und Neurowissenschaften und an der Universität Gießen geforscht. Ich bearbeite ein Problem gern von Anfang bis Ende: von der Fragestellung, dem Versuchsdesign und der Datenerhebung über Modellierung und Analyse bis zu einem Ergebnis, das andere verstehen, prüfen und direkt nutzen können.",
-      zh: "我在雷根斯堡大学获得博士学位，之后在马克斯·普朗克人类认知与脑科学研究所和吉森大学从事博士后研究。我喜欢把一个问题从头到尾做完，从提出问题、实验设计和数据采集，到建模、分析，再到最终得到别人可以理解、检验和直接使用的结果。",
+      en: "I did my PhD at the University of Regensburg, followed by postdoctoral research at the Max Planck Institute for Human Cognitive and Brain Sciences and the University of Giessen. I like to take a problem from start to finish: from asking the question, designing the experiment and collecting the data, to modelling and analysis, and finally to a result that anyone can understand, test and use directly.",
+      de: "Promoviert habe ich an der Universität Regensburg, danach habe ich als Postdoc am Max-Planck-Institut für Kognitions- und Neurowissenschaften und an der Universität Gießen geforscht. Ich bearbeite ein Problem gern von Anfang bis Ende: von der Fragestellung, dem Versuchsdesign und der Datenerhebung über Modellierung und Analyse bis zu einem Ergebnis, das alle verstehen, prüfen und direkt nutzen können.",
+      zh: "我在雷根斯堡大学获得博士学位，之后在马克斯·普朗克人类认知与脑科学研究所和吉森大学从事博士后研究。我喜欢把一个问题从头到尾做完，从提出问题、实验设计和数据采集，到建模、分析，再到最终得到大家可以理解、检验和直接使用的结果。",
     },
     {
       en: "For me, all of this points in one direction: understanding how people come to know the world, and whether machines are coming to know it in a different way.",
