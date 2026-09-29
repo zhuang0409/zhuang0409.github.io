@@ -27,6 +27,7 @@ window.SITE = (function () {
 
   // Fixed interface text used in the HTML files: <el data-i18n="key">.
   const STATIC = {
+    name: { en: "Tonghe Zhuang", de: "Tonghe Zhuang", zh: "庄童贺" },
     work: { en: "Work", de: "Arbeit", zh: "工作" },
     life: { en: "Life", de: "Leben", zh: "生活" },
     projects: { en: "Projects", de: "Projekte", zh: "研究项目" },

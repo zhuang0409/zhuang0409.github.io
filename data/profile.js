@@ -6,7 +6,7 @@
  */
 
 window.PROFILE = {
-  name: "Tonghe Zhuang",
+  name: { en: "Tonghe Zhuang", de: "Tonghe Zhuang", zh: "庄童贺" },
   role: {
     en: "Computational cognitive neuroscientist · Data scientist",
     de: "Computational Cognitive Neuroscientist · Data Scientist",

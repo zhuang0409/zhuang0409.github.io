@@ -77,13 +77,13 @@
   /* ---------- Hero ---------- */
   $("#about").innerHTML = `
     <div>
-      <h1>${esc(P.name)}</h1>
+      <h1>${esc(t(P.name))}${t(P.name) !== P.name.en ? ` <span class="name-alt">${esc(P.name.en)}</span>` : ""}</h1>
       <p class="role">${esc(t(P.role))} · ${esc(t(P.location))}</p>
       ${P.tagline ? `<p class="tagline">${esc(t(P.tagline))}</p>` : ""}
       ${P.intro.map((p) => `<p>${esc(t(p))}</p>`).join("")}
       <div class="links">${P.links.map((l) => `<a href="${esc(l.url)}"${/^https?:/.test(l.url) ? ' target="_blank" rel="noopener"' : ""}>${esc(t(l.label))}</a>`).join("")}</div>
     </div>
-    <img class="portrait" src="${esc(P.photo)}" alt="Portrait of ${esc(P.name)}">`;
+    <img class="portrait" src="${esc(P.photo)}" alt="Portrait of ${esc(P.name.en)}">`;
 
   /* ---------- Projects ---------- */
   PROJECTS.forEach((p) => (window.SITE.groups[p.id] = p.images || []));
@@ -155,7 +155,7 @@
     .join("");
   $(".awards").innerHTML = P.awards.map((a) => `<li>${esc(t(a))}</li>`).join("");
   $(".spoken").textContent = t(P.spokenLanguages);
-  $(".footer-text").textContent = `© ${new Date().getFullYear()} ${P.name} · ${ui.footer} ${document.lastModified.split(" ")[0]}`;
+  $(".footer-text").textContent = `© ${new Date().getFullYear()} ${t(P.name)} · ${ui.footer} ${document.lastModified.split(" ")[0]}`;
 
   /* ---------- Outreach: podcast & workshop ---------- */
   const B = window.BEYOND;
