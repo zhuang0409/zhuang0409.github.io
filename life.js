@@ -7,6 +7,7 @@
   const ui = {
     openingOnly: t({ en: "opening only", de: "nur der Anfang", zh: "仅开头" }),
     enlarge: t({ en: "Enlarge", de: "Vergrößern", zh: "放大" }),
+    soon: t({ en: "coming soon", de: "demnächst", zh: "即将发布" }),
     readEssay: t({ en: "Read the essay", de: "Zum Essay", zh: "读这篇随笔" }),
   };
   const L = window.LIFE;
@@ -75,7 +76,7 @@
           </div>
           <ul class="post-list">${posts
             .map((p) => p.status === "planned"
-              ? `<li class="planned">${esc(t(p.title))}</li>`
+              ? `<li class="planned">${esc(t(p.title))} · ${esc(ui.soon)}</li>`
               : `<li><a href="post.html?id=${esc(p.id)}">${esc(t(p.title))}</a> <span class="zh">${esc(p.zhTitle || "")}</span>
                    <span class="langs">${p.langs.map((l) => (l === "zh" ? "中文" : l.toUpperCase())).join(" / ")}${p.status === "excerpt" ? ` · ${esc(ui.openingOnly)}` : ""}</span></li>`)
             .join("")}</ul>

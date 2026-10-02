@@ -22,15 +22,15 @@ window.WRITING = {
       },
     },
     {
-      id: "low-investment-society",
-      title: { en: "The Low-Investment Society", de: "Die Low-Investment-Gesellschaft", zh: "低投入社会" },
-      zhTitle: "低投入社会",
-      status: {
-        en: "Writing now · planned as a blog series, then a book",
-        de: "Gerade in Arbeit · geplant als Blogreihe, später als Buch",
-        zh: "正在写 · 计划先写成博客系列，再出书",
+      id: "life-in-germany",
+      title: { en: "Notes on Life in Germany", de: "Notizen aus dem Leben in Deutschland", zh: "德国生活观察日记" },
+      zhTitle: "德国生活观察日记",
+      status: { en: "Writing now", de: "Gerade in Arbeit", zh: "正在写" },
+      summary: {
+        en: "Small essays on what I notice about society and everyday life in Germany.",
+        de: "Kurze Essays darüber, was mir an Gesellschaft und Alltag in Deutschland auffällt.",
+        zh: "关于德国社会和日常生活的观察，一篇一篇的小文章。",
       },
-      summary: { en: "A series in progress.", de: "Eine Reihe im Entstehen.", zh: "系列写作中。" },
     },
     {
       id: "notes",
@@ -56,6 +56,7 @@ window.WRITING = {
     { id: "climbing", series: "my-body-my-habits", title: { en: "Climbing & Bouldering: A Sport about Courage, Perspective and Trust", de: "Klettern & Bouldern: Ein Sport über Mut, Perspektive und Vertrauen", zh: "Climbing & Bouldering：一个关于勇气、视角与信任的运动" }, zhTitle: "Climbing & Bouldering：一个关于勇气、视角与信任的运动", langs: ["zh", "en"] },
     { id: "skating", series: "my-body-my-habits", title: { en: "Inline Skating: Scared, and Still Moving Forward", de: "Inlineskaten: Mit Angst und trotzdem vorwärts", zh: "轮滑：怕怕的，也能往前走" }, zhTitle: "轮滑：怕怕的，也能往前走", langs: ["zh", "en"] },
     { id: "emotion-sadness", series: "notes", title: { en: "Unpacking my own sadness, as a psychologist", de: "Meine eigene Traurigkeit entwirren, mit psychologischem Blick", zh: "心理学家分析自己的情绪：难过" }, zhTitle: "心理学家分析自己的情绪：难过", langs: ["zh"] },
-    { id: "low-investment-society-1", series: "low-investment-society", title: { en: "Coming soon", de: "Demnächst", zh: "即将发布" }, zhTitle: "即将发布", langs: [], status: "planned" },
+    { id: "low-investment-society", series: "life-in-germany", title: { en: "The Low-Investment Society", de: "Die Low-Investment-Gesellschaft", zh: "低投入社会" }, zhTitle: "低投入社会", langs: [], status: "planned" },
+    { id: "appointment-culture", series: "life-in-germany", title: { en: "Appointment Culture", de: "Terminkultur", zh: "预约文化" }, zhTitle: "预约文化", langs: [], status: "planned" },
   ],
 };
