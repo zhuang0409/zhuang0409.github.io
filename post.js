@@ -41,14 +41,15 @@
   const enTitle = (p) => (typeof p.title === "object" ? p.title.en : p.title);
   const titleIn = (p, lang) => (lang === "zh" ? p.zhTitle || t(p.title) : lang === "de" ? t(p.title) : enTitle(p));
 
-  // Very small text format: one line = one paragraph, "## " = heading, "---" = divider, "> " = quote.
+  // Very small text format: one line = one paragraph, "## " = heading, "---" = divider, "> " = quote, **bold**.
+  const fmt = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
   const render = (text) =>
     text.split("\n").filter((l) => l.trim()).map((l) => {
       if (l.trim() === "---") return "<hr>";
-      if (l.startsWith("## ")) return `<h2>${esc(l.slice(3))}</h2>`;
-      if (l.startsWith("> ")) return `<blockquote>${esc(l.slice(2))}</blockquote>`;
-      if (/^(Affirmation:|收尾语：)/.test(l)) return `<p class="affirmation">${esc(l)}</p>`;
-      return `<p>${esc(l)}</p>`;
+      if (l.startsWith("## ")) return `<h2>${fmt(l.slice(3))}</h2>`;
+      if (l.startsWith("> ")) return `<blockquote>${fmt(l.slice(2))}</blockquote>`;
+      if (/^(Affirmation:|收尾语：)/.test(l)) return `<p class="affirmation">${fmt(l)}</p>`;
+      return `<p>${fmt(l)}</p>`;
     }).join("");
 
   const script = document.createElement("script");

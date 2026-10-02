@@ -295,6 +295,7 @@ a.practice:hover { background: var(--accent); color: #fff; }
 .article-body { font-family: var(--serif); font-size: 1.2rem; line-height: 1.75; }
 .article-body.zh-text { font-family: "Noto Serif SC", var(--serif); font-size: 1.08rem; line-height: 1.95; }
 .article-body p { margin: 0 0 1em; }
+.article-body strong { font-weight: 600; }
 .article-body h2 { font-size: 1.4rem; margin: 2em 0 .8em; }
 .article-body hr { border: none; text-align: center; margin: 2.2em 0; }
 .article-body hr::after { content: "· · ·"; color: var(--muted); letter-spacing: .5em; }

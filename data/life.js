@@ -37,6 +37,7 @@ window.LIFE = {
           de: "Mein Ziel: eine 22 km lange Sommertour auf Inlinern durch die Stadt.",
           zh: "我的目标：夏天在城市里滑完 22 公里。",
         },
+        post: "skating",
         image: { src: "images/life/inline-skating.jpg", caption: { en: "Inline skating", de: "Inlineskaten", zh: "轮滑" } },
       },
       {
@@ -81,8 +82,8 @@ window.LIFE = {
         zh: "以为遥不可及的，其实触手可及。",
       },
       items: [
-        { name: { en: "Bouldering", de: "Bouldern", zh: "抱石" } },
-        { name: { en: "Climbing", de: "Klettern", zh: "攀岩" } },
+        { name: { en: "Bouldering", de: "Bouldern", zh: "抱石" }, post: "climbing" },
+        { name: { en: "Climbing", de: "Klettern", zh: "攀岩" }, post: "climbing" },
       ],
       images: [
         { src: "images/life/bouldering-level-3.jpg", caption: { en: "First day at bouldering level 3", de: "Erster Tag auf Boulder-Level 3", zh: "抱石三级的第一天" } },
