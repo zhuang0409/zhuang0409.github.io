@@ -24,6 +24,11 @@
       zh: "这是书稿《我的身体，我的习惯》中一节的开头，书稿还在撰写中。",
     }),
     germanNote: "Diesen Text gibt es auf Englisch und Chinesisch.",
+    machine: t({
+      en: "I wrote this in Chinese. The English version is a machine translation.",
+      de: "Ich habe diesen Text auf Chinesisch geschrieben. Die englische Fassung ist eine maschinelle Übersetzung.",
+      zh: "本文原文为中文，英文版为机器翻译。",
+    }),
   };
 
   window.SITE.init();
@@ -61,6 +66,7 @@
       const notes = [
         post.note ? `<p class="note">${esc(post.note)}</p>` : "",
         LANG === "de" && !langs.includes("de") ? `<p class="note">${esc(ui.germanNote)}</p>` : "",
+        post.machineTranslated?.includes(lang) ? `<p class="note">${esc(ui.machine)}</p>` : "",
       ].join("");
       const more = post.excerpt ? `<p class="excerpt-note">${esc(ui.excerpt)}</p>` : "";
       $(".article-body").innerHTML = notes + render(post.body[lang]) + more;

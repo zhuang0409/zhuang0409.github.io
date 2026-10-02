@@ -23,6 +23,7 @@
       book: "Book",
       with: "with",
       solo: "Independent project",
+      abstract: "Abstract",
       footer: "Last updated",
       project: "project",
       links: {},
@@ -41,6 +42,7 @@
       book: "Buch",
       with: "mit",
       solo: "Eigenständiges Projekt",
+      abstract: "Zusammenfassung",
       footer: "Zuletzt aktualisiert",
       project: "Projekt",
       links: { slides: "Folien", video: "Video", manuscript: "Manuskript" },
@@ -59,6 +61,7 @@
       book: "书籍",
       with: "合作：",
       solo: "独立完成",
+      abstract: "摘要",
       footer: "最后更新",
       project: "项目",
       links: { slides: "幻灯片", video: "视频", manuscript: "手稿" },
@@ -111,7 +114,7 @@
           .map((o) => `
             <li class="output">
               <span class="badge">${esc(ui.types[o.type] || o.type)}</span>
-              <span><span class="title">${esc(t(o.title))}</span><br><span class="cite">${cite(o)}</span><span class="olinks">${linkList(o.links)}</span></span>
+              <span><span class="title">${esc(t(o.title))}</span><br><span class="cite">${cite(o)}</span><span class="olinks">${linkList(o.links)}</span>${o.abstract ? `<details class="more abstract"><summary>${esc(ui.abstract)}</summary><p>${esc(t(o.abstract))}</p></details>` : ""}</span>
             </li>`)
           .join("")}</ul>
         ${p.links?.length ? `<div class="pill-links">${p.links.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(t(l.label))}</a>`).join("")}</div>` : ""}

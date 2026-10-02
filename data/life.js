@@ -27,6 +27,7 @@ window.LIFE = {
           de: "Meine neueste Leidenschaft. Bogenschießen ist die Kunst der Beständigkeit.",
           zh: "最新的沉迷。射箭是一致的艺术。",
         },
+        post: "archery",
         image: { src: "images/life/archery.jpg", caption: { en: "Archery", de: "Bogenschießen", zh: "射箭" } },
       },
       {

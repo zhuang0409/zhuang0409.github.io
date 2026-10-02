@@ -161,6 +161,7 @@ h3 { font-size: 1.35rem; }
 
 details.more summary { cursor: pointer; color: var(--accent-ink); font-size: .9rem; font-weight: 500; }
 details.more p { margin: 10px 0 0; max-width: 72ch; color: var(--text); font-size: .95rem; }
+details.abstract { margin-top: 6px; }
 
 /* ---------- Publications ---------- */
 .pub-group + .pub-group { margin-top: 28px; }

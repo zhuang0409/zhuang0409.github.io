@@ -7,6 +7,7 @@
   const ui = {
     openingOnly: t({ en: "opening only", de: "nur der Anfang", zh: "仅开头" }),
     enlarge: t({ en: "Enlarge", de: "Vergrößern", zh: "放大" }),
+    readEssay: t({ en: "Read the essay", de: "Zum Essay", zh: "读这篇随笔" }),
   };
   const L = window.LIFE;
   const W = window.WRITING;
@@ -41,6 +42,7 @@
           <div class="card-body">
             <h3>${esc(t(it.name))}</h3>
             ${paras(t(it.text))}
+            ${it.post ? `<div class="practices"><a class="practice" href="post.html?id=${esc(it.post)}">${esc(ui.readEssay)} <span aria-hidden="true">→</span></a></div>` : ""}
           </div>
         </article>`;
       })
