@@ -10,6 +10,17 @@
 window.WRITING = {
   series: [
     {
+      id: "blog",
+      title: { en: "Blog", de: "Blog", zh: "博客" },
+      zhTitle: "博客",
+      status: { en: "Posts", de: "Beiträge", zh: "文章" },
+      summary: {
+        en: "Thoughts on research, AI and the paths between.",
+        de: "Gedanken über Forschung, KI und die Wege dazwischen.",
+        zh: "关于科研、AI 和职业选择的想法。",
+      },
+    },
+    {
       id: "my-body-my-habits",
       title: { en: "My Body, My Habits", de: "Mein Körper, meine Gewohnheiten", zh: "我的身体，我的习惯" },
       zhTitle: "我的身体，我的习惯",
@@ -46,6 +57,7 @@ window.WRITING = {
   ],
 
   posts: [
+    { id: "leaving-academia", series: "blog", title: { en: "After AI, I Decided to Leave Academia", de: "Nach der KI habe ich beschlossen, die Wissenschaft zu verlassen", zh: "AI之后，我决定离开学术界" }, zhTitle: "AI之后，我决定离开学术界", langs: ["zh", "en"] },
     { id: "ballet-1", series: "my-body-my-habits", title: { en: "Ballet I: The Body's Small Sovereignty", de: "Ballett I: Die kleine Souveränität des Körpers", zh: "芭蕾（一）身体的微小主权" }, zhTitle: "芭蕾（一）身体的微小主权", langs: ["en", "zh"] },
     { id: "ballet-2", series: "my-body-my-habits", title: { en: "Ballet II: I Heard It, and I Looked Away", de: "Ballett II: Ich habe es gehört und weggeschaut", zh: "芭蕾（二）我听见了，但我选择不听" }, zhTitle: "芭蕾（二）我听见了，但我选择不听", langs: ["en", "zh"] },
     { id: "running", series: "my-body-my-habits", title: { en: "What I Talk About When I Talk About Running", de: "Wovon ich rede, wenn ich vom Laufen rede", zh: "当我谈跑步时我在谈什么" }, zhTitle: "当我谈跑步时我在谈什么", langs: ["en", "zh"] },
