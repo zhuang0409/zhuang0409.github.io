@@ -18,9 +18,16 @@ window.SITE = (function () {
   const LANG = pick();
   document.documentElement.dataset.lang = LANG;
   document.documentElement.lang = { en: "en", de: "de", zh: "zh-CN" }[LANG];
-  // Each language version is its own page for search engines: point canonical at ?lang=xx.
-  const canon = document.querySelector('link[rel="canonical"]');
-  if (canon && LANG !== "en") canon.href = `${canon.href.split("?")[0]}?lang=${LANG}`;
+  // Each language version is its own page for search engines: canonical points at
+  // the page itself (?lang=xx for de/zh). Not hard-coded in the HTML, because a
+  // static canonical to the English page would tell Google to skip de/zh.
+  // Only on index/life (pages with hreflang links); post.html uses ?id= instead.
+  if (document.querySelector('link[rel="alternate"][hreflang]')) {
+    const canon = document.createElement("link");
+    canon.rel = "canonical";
+    canon.href = "https://zhuang0409.github.io" + location.pathname.replace(/^.*\//, "/").replace(/\/index\.html$/, "/") + (LANG === "en" ? "" : `?lang=${LANG}`);
+    document.head.appendChild(canon);
+  }
   if (LANG === "zh") {
     const l = document.createElement("link");
     l.rel = "stylesheet";
